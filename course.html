@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Portal | Courses</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background-color: #f0f2f5;
+      color: #333;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    
+
+    header {
+      background-color: #2e3b4e;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    header h1 {
+      font-size: 28px;
+      margin-bottom: 10px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      padding: 10px 0;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      padding: 8px 16px;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+
+    nav ul li a:hover,
+    nav ul li a.active {
+      background-color: #4e5d78;
+    }
+
+    main {
+      flex: 1;
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: 0 auto;
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      margin-top: 30px;
+    }
+
+    main h2 {
+      font-size: 24px;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    #course-list {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .course {
+      background-color: #ffffff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      transition: transform 0.2s ease;
+    }
+
+    .course:hover {
+      transform: scale(1.01);
+    }
+
+    .course h3 {
+      font-size: 20px;
+      color: #2e3b4e;
+      margin-bottom: 8px;
+    }
+
+    .course p {
+      font-size: 16px;
+      margin: 6px 0;
+    }
+
+    .course button {
+      margin-top: 10px;
+      padding: 8px 16px;
+      background-color: #2e3b4e;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .course button:hover {
+      background-color: #4e5d78;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #2e3b4e;
+      color: white;
+      margin-top: auto;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Student Portal</h1>
+    <nav>
+      <ul>
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="profile.html">Profile</a></li>
+        <li><a href="courses.html" class="active">Courses</a></li>
+        <li><a href="assignments.html">Assignments</a></li>
+        <li><a href="grades.html">Grades</a></li>
+        <li><a href="attendance.html">Attendance</a></li>
+        <li><a href="timetable.html">Timetable</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="messages.html">Messages</a></li>
+        <li><a href="settings.html">Settings</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="course-list">
+      <h2>Available Courses</h2>
+
+      <article class="course">
+        <h3>Introduction to Programming</h3>
+        <p><strong>Instructor:</strong> Mr. Krish Vora</p>
+        <p><strong>Description:</strong> Covers basics of C++ and problem solving.</p>
+        <button>Enroll</button>
+      </article>
+
+      <article class="course">
+        <h3>Database Systems</h3>
+        <p><strong>Instructor:</strong> Ass. Prof. Vaibhavi Patel</p>
+        <p><strong>Description:</strong> Learn SQL and database design concepts.</p>
+        <button>Enroll</button>
+      </article>
+
+      <!-- Add more <article class="course"> blocks if needed -->
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Student Portal. All rights reserved.</p>
+  </footer>
+</body>
+</html>

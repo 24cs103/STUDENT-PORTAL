@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Student Portal | Messages</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Student Portal</h1>
+    <nav>
+      <ul>
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="profile.html">Profile</a></li>
+        <li><a href="courses.html">Courses</a></li>
+        <li><a href="assignments.html">Assignments</a></li>
+        <li><a href="grades.html">Grades</a></li>
+        <li><a href="attendance.html">Attendance</a></li>
+        <li><a href="timetable.html">Timetable</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="messages.html" class="active">Messages</a></li>
+        <li><a href="settings.html">Settings</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="messages-section">
+      <h2>Inbox</h2>
+
+      <div class="message">
+        <h4>From: Prof. Sharma (Java)</h4>
+        <p><strong>Subject:</strong> Project Guidelines</p>
+        <p>Hello students, please refer to the updated project guidelines uploaded under resources.</p>
+        <p class="timestamp">Received: 2nd July 2025, 10:15 AM</p>
+      </div>
+
+      <div class="message">
+        <h4>From: Admin</h4>
+        <p><strong>Subject:</strong> attendance Alert</p>
+        <p>The portal will be under maintenance on 5th July from 2 PM to 5 PM.</p>
+        <p class="timestamp">Received: 1st July 2025, 4:45 PM</p>
+      </div>
+
+      <!-- More messages can be listed here -->
+
+      <h2>Send a Message</h2>
+      <form>
+        <label for="recipient">To:</label>
+        <input type="text" id="recipient" placeholder="e.g., Prof. Sharma" required />
+
+        <label for="subject">Subject:</label>
+        <input type="text" id="subject" required />
+
+        <label for="message">Message:</label>
+        <textarea id="message" rows="5" required></textarea>
+
+        <button type="submit">Send</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Student Portal. All rights reserved.</p>
+  </footer>
+</body>
+</html>
